@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Exchange Currency</title>
+</head>
+<body>
+  <!-- 환전 박스1 -->
+<div class="exchange-box">
+    <div class="dropdown">
+        <button class="dropbtn" id="from-button">USD</button>
+        <div class="dropdown-content" id="from-currency-list">
+            <a id="USD">USD</a>
+            <a href="#" id="KRW">KRW</a>
+            <a href="#" id="VND">VND</a>
+        </div>
+    </div>
+    <div class="input-area">
+      <input type="number" class="amount-box" id="from-input" onkeyup="convert('from')" placeholder="금액을 입력하세요">
+      <div id="fromNumToKorea" class="korean-num">달러</div>
+    </div>
+</div>
+<div class="same-icon">
+  =
+</div>
+<!-- 환전 박스2 -->
+<div class="exchange-box">
+  <div class="dropdown">
+    <button class="dropbtn" id="to-button">USD</button>
+    <div class="dropdown-content" id="to-currency-list">
+      <a id="USD">USD</a>
+      <a id="KRW">KRW</a>
+      <a id="VND">VND</a>
+    </div>
+  </div>
+  <div class="input-area">
+    <input type="number" class="amount-box" id="to-input" onkeyup="convert('to')" placeholder="금액을 입력하세요">
+    <div id="toNumToKorea" class="korean-num">달러</div>
+  </div>
+</div>
+  <script src="main.js"></script>
+</body>
+</html>
